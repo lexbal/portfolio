@@ -25,7 +25,7 @@ export default function Header() {
                     >
                         <h1 className="text-4xl font-semibold tracking-tight text-white md:text-6xl">
                             {trans('header.name')}
-                            <span className="mx-2 inline text-white">Lex</span>
+                            <span className="mx-2 inline text-white">Alex</span>
                         </h1>
                         <p className="mt-4 max-w-2xl leading-relaxed text-neutral-300">
                             {trans('header.job')}
