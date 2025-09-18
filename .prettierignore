@@ -1,0 +1,13 @@
+node_modules
+.next
+out
+dist
+build
+coverage
+
+# fichiers d'environnement
+.env
+.env.*
+
+# git ignore et cie
+.gitignore

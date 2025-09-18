@@ -1,0 +1,37 @@
+{
+    "contact": {
+        "email": "E-mail",
+        "github": "Github",
+        "linkedin": "LinkedIn",
+        "title": "Envie de collaborer ou de me dire bonjour ?"
+    },
+    "footer": "Lex — Fait avec Next.js & Tailwind",
+    "header": {
+        "description": "J’aime concevoir des sites web propres et optimisés.",
+        "job": "Développeur Fullstack.",
+        "name": "Salut, moi c’est "
+    },
+    "projects": {
+        "code": "Code",
+        "live": "Live"
+    },
+    "section": {
+        "description": "A propos",
+        "skills": "Compétences",
+        "projects": "Projets"
+    },
+    "skills": {
+        "html": "HTML/CSS",
+        "php": "PHP",
+        "symfony": "Symfony",
+        "nextjs": "Next JS",
+        "react": "React",
+        "typescript": "Typescript",
+        "python": "Python",
+        "bootstrap": "Bootstrap",
+        "tailwindcss": "Tailwind CSS",
+        "mongodb": "MongoDB",
+        "mysql": "MySQL",
+        "cicd": "CI/CD"
+    }
+}
