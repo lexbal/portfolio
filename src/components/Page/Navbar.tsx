@@ -16,7 +16,6 @@ export default function Navbar() {
         return () => window.removeEventListener('scroll', onScroll);
     }, []);
 
-    // 🔹 Synchro avec le hash (retour arrière, lien externe vers #id, etc.)
     useEffect(() => {
         const syncFromHash = () => {
             const hash = decodeURIComponent(window.location.hash.replace('#', ''));
@@ -35,14 +34,12 @@ export default function Navbar() {
 
         const observer = new IntersectionObserver(
             (entries) => {
-                // On prend l'élément le plus visible (ou le premier visible)
                 const visible =
                     entries
                         .filter((e) => e.isIntersecting)
                         .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0] ?? null;
                 if (visible?.target?.id) setActive(visible.target.id);
             },
-            // 🔹 Plus tolérant: détecte dès qu'une petite partie entre dans le viewport
             { rootMargin: '-55% 0px -40% 0px', threshold: [0, 0.05, 0.1, 0.2, 0.5] },
         );
 
