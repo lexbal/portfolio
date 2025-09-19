@@ -17,7 +17,7 @@ export default function Section({ id, title, children }: SectionProps) {
     return (
         <section
             id={id}
-            className="/* pour les ancres via la navbar fixe */ flex min-h-[100svh] snap-start scroll-mt-24 items-center md:scroll-mt-28"
+            className="flex min-h-[100svh] snap-start scroll-mt-24 items-center md:scroll-mt-28"
         >
             <div className="mx-auto w-full max-w-6xl px-6 pt-20 pb-10 md:pt-24">
                 <div className="mb-8 flex items-center">

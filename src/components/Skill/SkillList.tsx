@@ -37,6 +37,8 @@ export default function SkillList() {
                     <motion.li
                         key={skill.label}
                         variants={item}
+                        initial="hidden"
+                        animate="show"
                         whileHover={{ y: -1, scale: 1.01 }}
                         whileTap={{ scale: 0.99 }}
                         className={`relative flex items-center gap-3 rounded-xl border border-white/10 bg-neutral-900/60 p-3 transition-colors before:absolute before:inset-y-0 before:left-0 before:w-[3px] before:bg-gradient-to-b before:from-sky-500 before:to-emerald-500 before:opacity-80 before:transition-all before:duration-300 before:content-[''] hover:bg-neutral-900/80 hover:before:w-[6px]`}
