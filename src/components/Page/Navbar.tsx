@@ -61,7 +61,7 @@ export default function Navbar() {
         >
             <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
                 <a href="#header" className="font-semibold tracking-tight text-white">
-                    Lex
+                    Alexandre
                 </a>
 
                 <div className="hidden items-center gap-5 md:flex">

@@ -41,7 +41,7 @@ export default function Header() {
                     >
                         <Image
                             src="/avatar.svg"
-                            alt="Photo de Lex"
+                            alt="Photo d'Alexandre"
                             fill
                             className="rounded-2xl object-cover ring-1 ring-white/10"
                             sizes="224px"

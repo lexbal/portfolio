@@ -8,14 +8,14 @@ import './globals.css';
 const locale = process.env.NEXT_PUBLIC_LOCALE ?? 'fr';
 
 export const metadata: Metadata = {
-    title: 'Portfolio – Lex',
+    title: 'Portfolio – Alexandre',
     description: 'Portfolio développeur',
     //metadataBase: new URL("https://example.com"),
     openGraph: {
-        title: 'Portfolio – Lex',
+        title: 'Portfolio – Alexandre',
         description: 'Portfolio développeur & créatif.',
         //url: "https://example.com",
-        siteName: 'Lex Portfolio',
+        siteName: 'Alexandre Portfolio',
         type: 'website',
     },
 };
