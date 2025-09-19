@@ -56,13 +56,13 @@ export default function Navbar() {
 
     return (
         <nav
-            className={`fixed top-0 right-0 left-0 z-50 transition-[background,border-color,backdrop-filter] ${
+            className={`hidden md:block fixed top-0 right-0 left-0 z-50 transition-[background,border-color,backdrop-filter] ${
                 scrolled ? 'border-b border-white/10 bg-neutral-950/70 backdrop-blur-md' : ''
             }`}
         >
             <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
                 <a href="#header" className="font-semibold tracking-tight text-white">
-                    Alexandre
+                    {trans('me')}
                 </a>
 
                 <div className="hidden items-center gap-5 md:flex">
