@@ -18,9 +18,9 @@ export default function Section({ id, title, children }: SectionProps) {
     return (
         <section
             id={id}
-            className="flex min-h-[100svh] snap-start scroll-mt-2 items-center md:scroll-mt-2"
+            className="flex min-h-[100svh] snap-start scroll-mt-5 items-center md:scroll-mt-5"
         >
-            <div className="mx-auto w-full max-w-6xl px-6 pt-2 pb-10 md:pt-2">
+            <div className="mx-auto w-full max-w-6xl px-6 pt-5 pb-10 md:pt-5">
                 <div className="mb-8 flex items-center">
                     <h2 className="relative pr-4 text-2xl font-semibold tracking-tight text-white md:text-3xl">
                         {title}

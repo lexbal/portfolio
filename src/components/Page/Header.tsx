@@ -22,7 +22,7 @@ export default function Header() {
                     >
                         <h1 className="text-5xl font-extrabold tracking-tight text-white md:text-7xl">
                             {trans('header.name')}
-                            <span className="mx-2 inline bg-gradient-to-r from-sky-400 via-fuchsia-400 to-emerald-400 bg-clip-text text-transparent">
+                            <span className="inline bg-gradient-to-r from-sky-400 via-fuchsia-400 to-emerald-400 bg-clip-text text-transparent">
                                 {trans('me')}
                             </span>
                         </h1>

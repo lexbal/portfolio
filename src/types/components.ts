@@ -5,7 +5,7 @@ import { IconType } from 'react-icons';
 export type SectionComponent = ComponentType<Record<string, never>>;
 
 export type NavbarLinkProps = {
-    code: 'description' | 'skills' | 'projects' | 'contact';
+    code: 'description' | 'skills' | 'education' | 'projects' | 'contact';
     component: SectionComponent;
 };
 
@@ -24,6 +24,18 @@ type WebContact<L extends Exclude<'email' | 'github' | 'linkedin', 'email'>> = {
 };
 
 export type ContactLinkProps = EmailContact | WebContact<'github'> | WebContact<'linkedin'>;
+
+export type TimelineItemProps = {
+    id: string;
+    kind: 'education' | 'experience';
+    title: string;
+    org: string;
+    start: string;
+    end?: string;
+    location?: string;
+    description?: string;
+    tags?: string[];
+};
 
 export type ProjectProps = {
     slug: string;

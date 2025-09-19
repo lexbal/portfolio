@@ -27,8 +27,9 @@
         "live": "Live"
     },
     "section": {
-        "description": "A propos",
         "contact": "Me contacter",
+        "description": "A propos",
+        "education": "Formations",
         "skills": "Compétences",
         "projects": "Projets"
     },

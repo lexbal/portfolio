@@ -16,15 +16,23 @@ import {
     SiLinkedin,
 } from 'react-icons/si';
 
+import Contact from '@/components/Contact/Contact';
+import Description from '@/components/Description/Description';
+import Education from '@/components/Education/Education';
 import ProjectList from '@/components/Project/ProjectList';
 import SkillList from '@/components/Skill/SkillList';
-import Description from '@/components/Description/Description';
-import { ContactLinkProps, NavbarLinkProps, ProjectProps, SkillProps } from '@/types';
-import Contact from '@/components/Contact/Contact';
+import {
+    ContactLinkProps,
+    NavbarLinkProps,
+    ProjectProps,
+    SkillProps,
+    TimelineItemProps,
+} from '@/types';
 
 export const links = [
     { code: 'description', component: Description },
     { code: 'skills', component: SkillList },
+    { code: 'education', component: Education },
     { code: 'projects', component: ProjectList },
     { code: 'contact', component: Contact },
 ] as const satisfies ReadonlyArray<NavbarLinkProps>;
@@ -85,3 +93,41 @@ export const contacts = [
         label: 'linkedin',
     },
 ] as const satisfies ReadonlyArray<ContactLinkProps>;
+
+export const timeline = [
+    {
+        id: 'edu-1',
+        kind: 'education',
+        title: 'BTS Système numérique - Informatique et réseaux',
+        org: 'La Providence',
+        start: '2016-09',
+        end: '2018-06',
+        location: 'Amiens, FR',
+        description: '',
+        tags: ['HTML/CSS', 'PHP', 'Javascript', 'C++', 'MySQL'],
+    },
+    {
+        id: 'edu-2',
+        kind: 'education',
+        title: "Master Expert en Informatique et système d'information - Architecture Web et Big Data",
+        org: 'IPSSI',
+        start: '2018-11',
+        end: '2022-09',
+        location: 'Paris 12, FR',
+        description: '',
+        tags: [
+            'HTML/CSS',
+            'PHP',
+            'Javascript',
+            'Symfony',
+            'Angular',
+            'React',
+            'ReactNative',
+            'Ionic',
+            'Python',
+            'Django',
+            'MySQL',
+            'MongoDB',
+        ],
+    },
+] as const satisfies ReadonlyArray<TimelineItemProps>;

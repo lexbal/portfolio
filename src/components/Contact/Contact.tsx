@@ -15,7 +15,7 @@ export default function Contact() {
                 </p>
 
                 <div className="grid items-start gap-10 md:grid-cols-5">
-                    <div className="space-y-4 md:col-span-2">
+                    <div className="mt-2 space-y-4 md:col-span-2">
                         <p className="leading-relaxed text-neutral-300">{trans('contact.lead')}</p>
 
                         <div className="flex flex-wrap items-center gap-3 pt-2">
