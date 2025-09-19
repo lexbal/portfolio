@@ -2,6 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { useEffect, useMemo, useState } from 'react';
+
 import { links } from '@/data/data';
 
 export default function Navbar() {

@@ -2,36 +2,48 @@
     "contact": {
         "email": "E-mail",
         "github": "Github",
+        "lead": "Je réponds rapidement. Précisez votre besoin, vos contraintes et vos délais pour que je vous aide au mieux.",
         "linkedin": "LinkedIn",
-        "title": "Envie de collaborer ou de me dire bonjour ?"
+        "message": "Message",
+        "message_sent": "Message envoyé",
+        "message_not_sent": "Oups, échec de l’envoi",
+        "name": "Nom",
+        "sending": "Envoi...",
+        "sent": "Envoyé",
+        "subtitle": "Envie de collaborer ou de me dire bonjour ?",
+        "title": "Me contacter"
     },
-    "footer": "Lex — Fait avec Next.js & Tailwind",
+    "footer": "Fait avec Next.js & Tailwind",
     "header": {
+        "contact": "Me contacter",
         "description": "J’aime concevoir des sites web propres et optimisés.",
         "job": "Développeur Fullstack.",
+        "my_projects": "Voir mes projets",
         "name": "Salut, moi c’est "
     },
+    "me": "Alexandre Balle",
     "projects": {
         "code": "Code",
         "live": "Live"
     },
     "section": {
         "description": "A propos",
+        "contact": "Me contacter",
         "skills": "Compétences",
         "projects": "Projets"
     },
     "skills": {
-        "html": "HTML/CSS",
-        "php": "PHP",
-        "symfony": "Symfony",
-        "nextjs": "Next JS",
-        "react": "React",
-        "typescript": "Typescript",
-        "python": "Python",
         "bootstrap": "Bootstrap",
-        "tailwindcss": "Tailwind CSS",
+        "cicd": "CI/CD",
+        "html": "HTML/CSS",
         "mongodb": "MongoDB",
         "mysql": "MySQL",
-        "cicd": "CI/CD"
+        "nextjs": "Next JS",
+        "php": "PHP",
+        "python": "Python",
+        "react": "React",
+        "symfony": "Symfony",
+        "tailwindcss": "Tailwind CSS",
+        "typescript": "Typescript"
     }
 }

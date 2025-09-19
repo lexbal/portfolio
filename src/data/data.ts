@@ -20,12 +20,16 @@ import ProjectList from '@/components/Project/ProjectList';
 import SkillList from '@/components/Skill/SkillList';
 import Description from '@/components/Description/Description';
 import { ContactLinkProps, NavbarLinkProps, ProjectProps, SkillProps } from '@/types';
+import Contact from '@/components/Contact/Contact';
 
 export const links = [
     { code: 'description', component: Description },
     { code: 'skills', component: SkillList },
     { code: 'projects', component: ProjectList },
+    { code: 'contact', component: Contact },
 ] as const satisfies ReadonlyArray<NavbarLinkProps>;
+
+export const hasLink = (code: (typeof links)[number]['code']) => links.some((l) => l.code === code);
 
 export const projects = [
     {

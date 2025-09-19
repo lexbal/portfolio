@@ -1,7 +1,7 @@
 import Navbar from '@/components/Page/Navbar';
-import Footer from '@/components/Page/Footer';
 import Content from '@/components/Page/Content';
 import Header from '@/components/Page/Header';
+import Footer from '@/components/Page/Footer';
 
 export const dynamic = 'force-dynamic'; // Empêche Next.js d’essayer de pré-rendre la page au build
 
@@ -18,10 +18,8 @@ export default function Home() {
                     <div className="pointer-events-none absolute inset-0 -z-10 before:absolute before:inset-0 before:bg-[radial-gradient(40rem_40rem_at_50%_-10%,rgba(255,255,255,0.06),transparent_60%)] before:content-['']" />
                     <Content />
                 </div>
-                <div className="relative">
-                    <div className="pointer-events-none absolute inset-0 -z-10 before:absolute before:inset-0 before:bg-[radial-gradient(40rem_40rem_at_50%_-10%,rgba(255,255,255,0.06),transparent_60%)] before:content-['']" />
-                    <Footer />
-                </div>
+
+                <Footer />
             </main>
         </>
     );

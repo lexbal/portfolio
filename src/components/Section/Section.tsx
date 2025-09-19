@@ -3,6 +3,7 @@
 import { motion, type Variants, easeOut } from 'framer-motion';
 import { useRef } from 'react';
 import { useInView } from 'framer-motion';
+
 import { SectionProps } from '@/types';
 
 const reveal: Variants = {
@@ -17,9 +18,9 @@ export default function Section({ id, title, children }: SectionProps) {
     return (
         <section
             id={id}
-            className="flex min-h-[100svh] snap-start scroll-mt-24 items-center md:scroll-mt-28"
+            className="flex min-h-[100svh] snap-start scroll-mt-2 items-center md:scroll-mt-2"
         >
-            <div className="mx-auto w-full max-w-6xl px-6 pt-20 pb-10 md:pt-24">
+            <div className="mx-auto w-full max-w-6xl px-6 pt-2 pb-10 md:pt-2">
                 <div className="mb-8 flex items-center">
                     <h2 className="relative pr-4 text-2xl font-semibold tracking-tight text-white md:text-3xl">
                         {title}

@@ -1,6 +1,7 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
+
 import Section from '@/components/Section/Section';
 import { links } from '@/data/data';
 import { SectionComponent } from '@/types';

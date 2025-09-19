@@ -1,40 +1,59 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
+import { hasLink } from '@/data/data';
 
 export default function Header() {
     const trans = useTranslations();
 
     return (
         <header id="header" className="flex min-h-[100svh] snap-start items-center">
-            <div className="mx-auto w-full max-w-6xl px-6 pt-20 pb-10 md:pt-24">
-                <div className="pointer-events-none absolute inset-0 -z-10 hidden [mask-image:radial-gradient(40rem_40rem_at_center,black,transparent)]">
-                    <div className="bg-grid absolute inset-0" />
-                </div>
-                <div className="pointer-events-none absolute top-10 -left-24 -z-10 hidden h-60 w-60 rounded-full bg-gradient-to-tr from-sky-500/20 to-fuchsia-500/20 blur-2xl" />
-                <div className="pointer-events-none absolute -right-24 bottom-0 -z-10 hidden h-72 w-72 rounded-full bg-gradient-to-tr from-emerald-500/20 to-sky-500/20 blur-3xl" />
+            <div className="relative mx-auto w-full max-w-6xl px-6 pt-20 pb-10 md:pt-24">
+                <div className="pointer-events-none absolute inset-0 -z-10 before:absolute before:inset-0 before:bg-[radial-gradient(48rem_48rem_at_20%_20%,rgba(255,255,255,0.06),transparent_60%)] before:content-['']" />
 
-                <div className="relative z-10 flex flex-col-reverse items-start gap-8 md:flex-row md:items-center">
+                <div className="relative z-10 flex flex-col-reverse items-start gap-10 md:flex-row md:items-center">
                     <motion.div
                         className="flex-1"
                         initial={{ opacity: 0, y: 12 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5 }}
                     >
-                        <h1 className="text-4xl font-semibold tracking-tight text-white md:text-6xl">
+                        <h1 className="text-5xl font-extrabold tracking-tight text-white md:text-7xl">
                             {trans('header.name')}
-                            <span className="mx-2 inline text-white">Alex</span>
+                            <span className="mx-2 inline bg-gradient-to-r from-sky-400 via-fuchsia-400 to-emerald-400 bg-clip-text text-transparent">
+                                {trans('me')}
+                            </span>
                         </h1>
-                        <p className="mt-4 max-w-2xl leading-relaxed text-neutral-300">
-                            {trans('header.job')}
-                            {trans('header.description')}
-                        </p>
+
+                        <div className="mt-5 max-w-2xl text-lg leading-relaxed text-neutral-300">
+                            <p>{trans('header.job')}</p>
+                            <p>{trans('header.description')}</p>
+                        </div>
+
+                        <div className="mt-8 flex flex-wrap gap-3">
+                            {hasLink('projects') && (
+                                <a
+                                    href="#projects"
+                                    className="rounded-xl bg-white px-5 py-3 text-sm font-medium text-neutral-900 transition hover:bg-neutral-200"
+                                >
+                                    {trans('header.my_projects')}
+                                </a>
+                            )}
+                            {hasLink('contact') && (
+                                <a
+                                    href="#contact"
+                                    className="rounded-xl border border-white/10 px-5 py-3 text-sm text-white transition hover:border-white/30"
+                                >
+                                    {trans('header.contact')}
+                                </a>
+                            )}
+                        </div>
                     </motion.div>
 
                     <motion.div
-                        className="relative h-40 w-40 shrink-0 md:h-56 md:w-56"
+                        className="relative h-40 w-40 shrink-0 rounded-2xl shadow-xl shadow-black/40 before:absolute before:-inset-[2px] before:-z-10 before:rounded-[1.25rem] before:bg-[conic-gradient(from_180deg,theme(colors.sky.500/20),theme(colors.fuchsia.500/20),theme(colors.emerald.500/20),theme(colors.sky.500/20))] before:blur md:h-56 md:w-56"
                         initial={{ opacity: 0, scale: 0.98 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.4, delay: 0.05 }}
