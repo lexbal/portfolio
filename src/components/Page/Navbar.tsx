@@ -56,7 +56,7 @@ export default function Navbar() {
 
     return (
         <nav
-            className={`hidden md:block fixed top-0 right-0 left-0 z-50 transition-[background,border-color,backdrop-filter] ${
+            className={`fixed top-0 right-0 left-0 z-50 hidden transition-[background,border-color,backdrop-filter] md:block ${
                 scrolled ? 'border-b border-white/10 bg-neutral-950/70 backdrop-blur-md' : ''
             }`}
         >
