@@ -11,7 +11,7 @@ export default function Header() {
     return (
         <header id="header" className="flex min-h-[100svh] snap-start items-center">
             <div className="relative mx-auto w-full max-w-6xl px-6 pt-20 pb-10 md:pt-24">
-                <div className="pointer-events-none absolute inset-0 -z-10 before:absolute before:inset-0 before:bg-[radial-gradient(48rem_48rem_at_20%_20%,rgba(255,255,255,0.06),transparent_60%)] before:content-['']" />
+                <div className="pointer-events-none absolute inset-0 -z-10 before:absolute before:inset-0" />
 
                 <div className="relative z-10 flex flex-col-reverse items-start gap-10 md:flex-row md:items-center">
                     <motion.div
@@ -28,7 +28,7 @@ export default function Header() {
                         </h1>
 
                         <div className="mt-5 max-w-2xl text-lg leading-relaxed text-neutral-300">
-                            <p>{trans('header.job')}</p>
+                            <p><span className="text-white font-bold">{trans('header.job')}</span></p>
                             <p>{trans('header.description')}</p>
                         </div>
 
