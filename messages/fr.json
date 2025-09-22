@@ -13,6 +13,7 @@
         "subtitle": "Envie de collaborer ou de me dire bonjour ?",
         "title": "Me contacter"
     },
+    "description": "Je conçois et maintiens des applications web de bout en bout : interfaces réactives avec <span>React</span>/<span>Next.js 15</span> et <span>TypeScript</span>, UI soignées en <span>Tailwind</span>/<span>Bootstrap</span>, API robustes en <span>Symfony/PHP</span> (et parfois<span>Python</span>), données sur <span>MySQL</span> et <span>MongoDB</span>. J’automatise les livraisons avec <span>GitHub Actions</span> et je privilégie qualité de code, sécurité, accessibilité et performances.",
     "education": {
         "description": {
             "bts": "Formation tourné vers les bases de : la conception de logiciels ou de sites web, l'installation, la maintenance, l'exploitation et la commercialisation de systèmes informatiques.",

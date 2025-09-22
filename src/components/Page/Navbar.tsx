@@ -8,7 +8,7 @@ import { links } from '@/data/data';
 export default function Navbar() {
     const trans = useTranslations();
     const [scrolled, setScrolled] = useState(false);
-    const [active, setActive] = useState<string>(links[0]?.code ?? '');
+    const [active, setActive] = useState<string>('');
 
     useEffect(() => {
         const onScroll = () => setScrolled(window.scrollY > 8);
@@ -61,7 +61,11 @@ export default function Navbar() {
             }`}
         >
             <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
-                <a href="#header" className="font-semibold tracking-tight text-white">
+                <a
+                    href="#header"
+                    className="font-semibold tracking-tight text-white"
+                    onClick={() => setActive('')}
+                >
                     {trans('me')}
                 </a>
 
