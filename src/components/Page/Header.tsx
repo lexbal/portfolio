@@ -62,7 +62,7 @@ export default function Header() {
                         transition={{ duration: 0.4, delay: 0.05 }}
                     >
                         <Image
-                            src="/avatar_bg_gray_dark_1024x1024.png"
+                            src="/avatar_171717_solid_square.png"
                             alt="Photo d'Alexandre"
                             fill
                             className="rounded-2xl object-cover ring-1 ring-white/10"
