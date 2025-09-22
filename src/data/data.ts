@@ -28,12 +28,14 @@ import {
     SkillProps,
     TimelineItemProps,
 } from '@/types';
+import Resume from '@/components/Resume/Resume';
 
 export const links = [
     { code: 'description', component: Description },
     { code: 'skills', component: SkillList },
     { code: 'education', component: Education },
     { code: 'projects', component: ProjectList },
+    { code: 'resume', component: Resume },
     { code: 'contact', component: Contact },
 ] as const satisfies ReadonlyArray<NavbarLinkProps>;
 

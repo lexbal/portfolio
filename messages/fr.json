@@ -37,10 +37,21 @@
             "humanaidbo": "Projet scolaire annuel visant à créer une solution pour une communauté particulière. Ce référentiel contient le backend de cette solution, qui permet de gérer toutes les données grâce à plusieurs CRUD et à une API."
         }
     },
+    "resume": {
+        "description": "Découvrez mon parcours professionnel et mes compétences en téléchargeant mon CV au format PDF.",
+        "download": "Télécharger mon CV",
+        "format": "Format",
+        "french": "Français",
+        "lang": "Langue",
+        "note": "Document personnel — usage de recrutement uniquement. Version à jour : {date}",
+        "pdf": "PDF",
+        "view_online": "Voir en ligne"
+    },
     "section": {
         "contact": "Me contacter",
         "description": "A propos",
         "education": "Formations",
+        "resume": "Mon CV",
         "skills": "Compétences",
         "projects": "Projets"
     },

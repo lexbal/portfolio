@@ -5,7 +5,7 @@ import { IconType } from 'react-icons';
 export type SectionComponent = ComponentType<Record<string, never>>;
 
 export type NavbarLinkProps = {
-    code: 'description' | 'skills' | 'education' | 'projects' | 'contact';
+    code: 'description' | 'skills' | 'education' | 'projects' | 'resume' | 'contact';
     component: SectionComponent;
 };
 
