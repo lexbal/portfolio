@@ -1,8 +1,9 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { contacts } from '@/data/data';
+
 import ContactForm from '@/components/Contact/ContactForm';
+import { contacts } from '@/data/data';
 
 export default function Contact() {
     const trans = useTranslations();

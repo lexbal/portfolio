@@ -22,7 +22,11 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             </div>
             <div className="p-5">
                 <h3 className="text-xl font-semibold text-white">{project.title}</h3>
-                <p className="mt-2 text-neutral-300">{project.description}</p>
+                <p className="mt-2 text-neutral-300">
+                    {project.description
+                        ? trans('projects.description.' + project.description)
+                        : ''}
+                </p>
                 <div className="mt-4 flex flex-wrap gap-2">
                     {project.tags.map((tag) => (
                         <span

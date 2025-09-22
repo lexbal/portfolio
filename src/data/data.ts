@@ -43,30 +43,21 @@ export const projects = [
     {
         slug: 'humanaid-fo',
         title: 'HumanAid FO',
-        description:
-            "Projet scolaire annuel visant à créer une solution pour une communauté particulière. Ce référentiel contient l'interface utilisateur de cette solution.",
+        description: 'humanaidfo',
         image: '/project.svg',
         tags: ['React', 'Bootstrap', 'Typescript'],
+        link: undefined,
         repo: 'https://github.com/lexbal/HumanAid_FO',
     },
     {
         slug: 'humanaid-bo',
         title: 'HumanAid BO',
-        description:
-            'Projet scolaire annuel visant à créer une solution pour une communauté particulière. Ce référentiel contient le backend de cette solution, qui permet de gérer toutes les données grâce à plusieurs CRUD et à une API.',
+        description: 'humanaidbo',
         image: '/project.svg',
         tags: ['Symfony', 'PHP', 'Bootstrap', 'Javascript', 'MySQL', 'Nginx'],
+        link: undefined,
         repo: 'https://github.com/lexbal/HumanAid_BO',
     },
-    // {
-    //     slug: "humanaid-bo",
-    //     title: "HumanAid BO",
-    //     description: "Projet scolaire annuel visant à créer une solution pour une communauté particulière. Ce référentiel contient le backend de cette solution, qui permet de gérer toutes les données grâce à plusieurs CRUD et à une API.",
-    //     image: "/project.svg",
-    //     tags: ["Symfony", "PHP", "Javascript", "MySQL", "Nginx"],
-    //     link: undefined,
-    //     repo: "https://github.com/lexbal/HumanAid_BO/tree/master",
-    // },
 ] as const satisfies ReadonlyArray<ProjectProps>;
 
 export const skills = [
@@ -103,7 +94,7 @@ export const timeline = [
         start: '2016-09',
         end: '2018-06',
         location: 'Amiens, FR',
-        description: '',
+        description: 'bts',
         tags: ['HTML/CSS', 'PHP', 'Javascript', 'C++', 'MySQL'],
     },
     {
@@ -114,7 +105,7 @@ export const timeline = [
         start: '2018-11',
         end: '2022-09',
         location: 'Paris 12, FR',
-        description: '',
+        description: 'master',
         tags: [
             'HTML/CSS',
             'PHP',

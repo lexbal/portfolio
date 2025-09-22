@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
+
 import { hasLink } from '@/data/data';
 
 export default function Header() {
@@ -28,7 +29,9 @@ export default function Header() {
                         </h1>
 
                         <div className="mt-5 max-w-2xl text-lg leading-relaxed text-neutral-300">
-                            <p><span className="text-white font-bold">{trans('header.job')}</span></p>
+                            <p>
+                                <span className="font-bold text-white">{trans('header.job')}</span>
+                            </p>
                             <p>{trans('header.description')}</p>
                         </div>
 

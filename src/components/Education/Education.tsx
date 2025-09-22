@@ -1,10 +1,13 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
+
 import { timeline } from '@/data/data';
 import { TimelineItemProps } from '@/types';
 import { endTs, formatPeriod, startTs } from '@/utils/date';
 
 export default function Education() {
+    const trans = useTranslations();
     const items = [...timeline].sort((a, b) => {
         const byEnd = endTs(b.end) - endTs(a.end);
         return byEnd !== 0 ? byEnd : startTs(b.start) - startTs(a.start);
@@ -72,7 +75,9 @@ export default function Education() {
                                                 {item.location} ·{' '}
                                             </span>
                                         )}
-                                        {item.description}
+                                        {item.description
+                                            ? trans('education.description.' + item.description)
+                                            : ''}
                                     </p>
                                 )}
 

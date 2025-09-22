@@ -1,7 +1,7 @@
-import Navbar from '@/components/Page/Navbar';
 import Content from '@/components/Page/Content';
-import Header from '@/components/Page/Header';
 import Footer from '@/components/Page/Footer';
+import Header from '@/components/Page/Header';
+import Navbar from '@/components/Page/Navbar';
 
 export const dynamic = 'force-dynamic'; // Empêche Next.js d’essayer de pré-rendre la page au build
 

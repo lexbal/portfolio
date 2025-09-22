@@ -1,5 +1,5 @@
-// src/components/Page/Footer.tsx
 'use client';
+
 import { useTranslations } from 'next-intl';
 
 export default function Footer() {
