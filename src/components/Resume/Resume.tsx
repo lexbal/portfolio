@@ -5,8 +5,8 @@ import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 
 export default function Resume() {
-    const href = '/cv.pdf';
-    const coverSrc = '';
+    const href = '/cv-2025.pdf';
+    const coverSrc = '/cv-2025.jpg';
     const trans = useTranslations();
 
     return (
